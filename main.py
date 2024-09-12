@@ -50,7 +50,7 @@ def main():
         zipfile = f"{name}.gz"
         # Compress and split the file
         gzip_file(name, zipfile)
-        split_file(zipfile, 25, name)  # Split into 25MB parts
+        split_file(zipfile, 10, name)  # Split into 25MB parts
 
     elif action == 'join' or action == 'j':
 
